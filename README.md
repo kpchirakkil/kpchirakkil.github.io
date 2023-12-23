@@ -1,5 +1,5 @@
 ### Hi there 👋
-😄 My pronouns: he/him/his
+🔭 I’m currently working on understanding the upper atmosphere, exosphere and ionosphere of Mars using spacecraft data and models.
 
 <!--
 **kpchirakkil/kpchirakkil** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

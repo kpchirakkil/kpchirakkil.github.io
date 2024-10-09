@@ -1,178 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Krishnaprasad Chirakkil</title>
-  <style>
-    .content {
-      display: flex;
-    }
-
-    .text-content {
-      flex: 2;
-    }
-
-    .figure-content {
-      flex: 1;
-      margin-left: 20px;
-      text-align: center;
-    }
-
-    .figure-content img {
-      width: 100%;
-      height: auto;
-    }
-
-    .figure-caption {
-      font-style: italic;
-      font-size: 0.9em;
-      margin-top: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Dr. Krishnaprasad Chirakkil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Adding the photo -->
-<img src="IMG_3809.jpg" alt="Krishnaprasad Chirakkil" style="width:150px;height:auto;float:left;margin-right:20px;">
+    <!-- Header with navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Krishnaprasad Chirakkil</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#participation">Participation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<h1>Dr. Krishnaprasad Chirakkil</h1>
-<p>Hello! Welcome!! I am a Research Scientist at the Laboratory for Atmospheric and Space Physics (LASP), University of Colorado Boulder. 
-  My research focuses on the upper atmospheres, ionospheres, and exospheres of planets, with a particular interest in Mars, its atmospheric escape, and evolution. I am also greatly interested in heliophysics and space weather. 
-  In my leisure time, I enjoy outdoors, traveling, tennis, and biking. My pronouns are he/him/his.</p>
+    <!-- Hero section with introduction -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Welcome!</h2>
+                    <p>I am a Research Scientist at the Laboratory for Atmospheric and Space Physics (LASP), University of Colorado Boulder.</p>
+                    <p>My research focuses on the upper atmospheres, ionospheres, and exospheres of planets, with a particular interest in Mars, its atmospheric escape, and evolution. I am also greatly interested in heliophysics and space weather.</p>
+                    <p>In my leisure time, I enjoy outdoors, traveling, tennis, and biking. My pronouns are he/him/his.</p>
+                    <!-- Contact Information -->
+                    <p class="contact-info">✉️ <a href="mailto:krishnaprasad.chirakkil@lasp.colorado.edu">krishnaprasad.chirakkil@lasp.colorado.edu</a> | 🌐 <a href="https://lasp.colorado.edu/people/krishnaprasad-chirakkil/" target="_blank">Institutional Webpage</a> | 📍 Boulder, CO, USA</p>
+                </div>
+                <div class="hero-image">
+                    <img src="IMG_3809.jpg" alt="Krishnaprasad Chirakkil">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Contact Information -->
-<p>✉️ <a href="mailto:krishnaprasad.chirakkil@lasp.colorado.edu">krishnaprasad.chirakkil@lasp.colorado.edu</a> | 🌐 <a href="https://lasp.colorado.edu/people/krishnaprasad-chirakkil/">Institutional Webpage</a> | 📍 Boulder, CO, USA</p>
-
-<div class="content">
-  <div class="text-content">
     <!-- Education Section -->
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>Ph.D. Physics, Cochin University of Science and Technology, July 2021</li>
-        <p><em>Thesis:</em> <a href="https://drive.google.com/file/d/1XelWOlPO9kBZd_iQMS4EkP7v4NpgNsfd/view" target="_blank"><em>Solar Energetic Particles Associated with Coronal Mass Ejections and Corotating Interaction Regions and their Influence on Martian Plasma Environment</em></a></p>
-        <p><a href="https://shodhganga.inflibnet.ac.in/handle/10603/354899" target="_blank">[Citation Details]</a></p>
-        <li>M.Sc. Physics, National Institute of Technology Calicut, May 2015</li>
-        <li>B.Sc. Physics, University of Calicut, May 2013</li>
-      </ul>
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <ul class="timeline">
+                <li>
+                    <h3>Ph.D. Physics</h3>
+                    <span class="institution">Cochin University of Science and Technology</span>
+                    <span class="date">July 2021</span>
+                    <p><em>Thesis:</em> <a href="https://drive.google.com/file/d/1XelWOlPO9kBZd_iQMS4EkP7v4NpgNsfd/view" target="_blank">Solar Energetic Particles Associated with Coronal Mass Ejections and Corotating Interaction Regions and their Influence on Martian Plasma Environment</a></p>
+                    <p><a href="https://shodhganga.inflibnet.ac.in/handle/10603/354899" target="_blank">[Citation Details]</a></p>
+                </li>
+                <li>
+                    <h3>M.Sc. Physics</h3>
+                    <span class="institution">National Institute of Technology Calicut</span>
+                    <span class="date">May 2015</span>
+                </li>
+                <li>
+                    <h3>B.Sc. Physics</h3>
+                    <span class="institution">University of Calicut</span>
+                    <span class="date">May 2013</span>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Research and Teaching Experience -->
-    <section>
-      <h2>Research and Teaching Experience</h2>
-      <ul>
-        <li>Research Scientist-II, Laboratory for Atmospheric and Space Physics, University of Colorado Boulder, December 2023 - present</li>
-        <li>Research Scientist-I, Laboratory for Atmospheric and Space Physics, University of Colorado Boulder, July 2021 - December 2023</li>
-        <li>Professional Research Assistant, Laboratory for Atmospheric and Space Physics, University of Colorado Boulder, May 2021 - July 2021</li>
-        <li>Visiting Researcher, Space and Planetary Science Center, Khalifa University, May 2021 - present</li>
-        <li>Visiting Scholar, Space Sciences Laboratory, University of California, Berkeley, May 2021 - December 2023</li>
-        <li>Senior Research Fellow, Space Physics Laboratory, Vikram Sarabhai Space Centre, Indian Space Research Organisation, June 2018 - April 2021</li>
-        <li>Junior Research Fellow, Space Physics Laboratory, Vikram Sarabhai Space Centre, Indian Space Research Organisation, June 2016 - June 2018</li>
-        <li>Teaching Assistant, Indian Institute of Technology Palakkad, July 2015 - June 2016</li>
-        <li>Visiting Student, Raman Research Institute, January 2015 - June 2015</li>
-        <li>Summer Student, Indian Institute of Technology Madras, May 2014 - July 2014</li>
-      </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Research and Teaching Experience</h2>
+            <ul class="timeline">
+                <li>
+                    <h3>Research Scientist-II</h3>
+                    <span class="institution">Laboratory for Atmospheric and Space Physics, University of Colorado Boulder</span>
+                    <span class="date">December 2023 - Present</span>
+                </li>
+                <li>
+                    <h3>Research Scientist-I</h3>
+                    <span class="institution">Laboratory for Atmospheric and Space Physics, University of Colorado Boulder</span>
+                    <span class="date">July 2021 - December 2023</span>
+                </li>
+                <li>
+                    <h3>Professional Research Assistant</h3>
+                    <span class="institution">Laboratory for Atmospheric and Space Physics, University of Colorado Boulder</span>
+                    <span class="date">May 2021 - July 2021</span>
+                </li>
+                <li>
+                    <h3>Visiting Researcher</h3>
+                    <span class="institution">Space and Planetary Science Center, Khalifa University</span>
+                    <span class="date">May 2021 - Present</span>
+                </li>
+                <!-- Add more experiences as needed -->
+            </ul>
+        </div>
     </section>
-  </div>
 
-  <div class="figure-content">
-    <img src="aurora_public_1.png" alt="Martian nightside aurora images from EMM/EMUS" style="width:400px;height:400px;float:right;margin-right:40px;">
-    <div class="figure-caption">Martian nightside aurora images from EMM/EMUS (Chirakkil et al., 2024b)</div>
-  </div>
-</div>
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2>Publications</h2>
+            <p>My full list of publications can be accessed through <a href="https://scholar.google.com/citations?user=nImUTAsAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
+            <ul class="publications-list">
+                <!-- List your publications here -->
+                <!-- Example Publication -->
+                <li>
+                    <strong>K. Chirakkil</strong>, R. J. Lillis, J. Deighan, M. S. Chaffin, S. K. Jain, D. A. Brain, et al. (2024). <em>EMM EMUS observations of FUV aurora on Mars: Dependence on magnetic topology, local time, and season</em>. <a href="https://doi.org/10.1029/2024JE008336" target="_blank">Journal of Geophysical Research: Planets, 129</a>
+                </li>
+                <!-- Add more publications as needed -->
+            </ul>
+        </div>
+    </section>
 
-<!-- Publications -->
-<section>
-  <h2>Publications</h2>
-  <p>My full list of publications can be accessed through <a href="https://scholar.google.com/citations?user=nImUTAsAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
-    <ul>
+    <!-- Participation Section -->
+    <section id="participation" class="section">
+        <div class="container">
+            <h2>Participation</h2>
+            <ul>
+                <li>NASA grant proposal review panel, 2024</li>
+                <li>NASA Postdoctoral Program application review panel, 2024</li>
+                <li>NASA Heliophysics Summer School, 2020</li>
+                <li>NASA SPICE Training Class, 2019</li>
+                <!-- Add more participations as needed -->
+            </ul>
+        </div>
+    </section>
 
-      <li><strong>K. Chirakkil</strong>, R. J. Lillis, J. Deighan, M. S. Chaffin, S. K. Jain, D. A. Brain, et al. (2024). <em>EMM EMUS observations of FUV aurora on Mars: Dependence on magnetic topology, local time, and season</em>, <a href="https://doi.org/10.1029/2024JE008336">Journal of Geophysical Research: Planets, 129</a></li>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email or connect on my institutional webpage.</p>
+            <p>✉️ <a href="mailto:krishnaprasad.chirakkil@lasp.colorado.edu">krishnaprasad.chirakkil@lasp.colorado.edu</a></p>
+            <p>🌐 <a href="https://lasp.colorado.edu/people/krishnaprasad-chirakkil/" target="_blank">Institutional Webpage</a></p>
+        </div>
+    </section>
 
-      
-      <li>R. J. Lillis, J. Deighan, <strong>K. Chirakkil</strong>, S. Jain, M. Fillingim, M. Chaffin, et al. (2024). <em>Sinuous aurora at Mars: A link to the tail current sheet?</em>, <a href="https://doi.org/10.1029/2024JA032477">Journal of Geophysical Research: Space Physics, 129</a></li>
-
-      
-      <li>R. Susarla, J. Deighan, M. S. Chaffin, S. Jain, R. J. Lillis, <strong>K. Chirakkil</strong>, et al. (2024). <em>Variability of atomic hydrogen brightness in the Martian exosphere: Insights from the emirates ultraviolet spectrometer on board emirates Mars mission</em>, <a href="https://doi.org/10.1029/2024JA032525">Journal of Geophysical Research: Space Physics, 129</a></li>
-
-  
-      <li>L. Soret, B. Hubert, J.-C. Gérard, S. Jain, <strong>K. Chirakkil</strong>, R. Lillis, J. Deighan (2024), <em>Quantifying the electron energy of Mars aurorae through the oxygen emission brightness ratio at 130.4 and 135.6 nm</em>, <a href="https://doi.org/10.1029/2023JE008214">Journal of Geophysical Research: Planets, 129</a></li>
-
-      
-      <li><strong>K. Chirakkil</strong>, J. Deighan, M. S. Chaffin, S. K. Jain, R. J. Lillis, S. Raghuram, et al. (2024), <em>EMM EMUS observations of hot oxygen corona at Mars: Radial distribution and temporal variability</em>, <a href="https://doi.org/10.1029/2023JA032342">Journal of Geophysical Research: Space Physics, 129</a></li>
-
-      
-      <li>M. S. Chaffin, J. Deighan, S. Jain, G. Holsclaw, H. AlMazmi, <strong>K. Chirakkil</strong>, et al. (2022), <em>Combined analysis of hydrogen and oxygen 102.6 nm emission at Mars</em>, <a href="https://doi.org/10.1029/2022GL099851">Geophysical Research Letters, 49</a></li>
-
-  
-      <li>R. J. Lillis, J. Deighan, D. Brain, M. Fillingim, S. Jain, M. Chaffin, S. England, G. Holsclaw, <strong>K. Chirakkil</strong>, et al. (2022), <em>First synoptic images of FUV discrete aurora and discovery of sinuous aurora at Mars by EMM EMUS</em>, <a href="https://doi.org/10.1029/2022GL099820">Geophysical Research Letters, 49</a></li>
-
-  
-      <li>M. S. Chaffin, C. M. Fowler, J. Deighan, S. Jain, G. Holsclaw, A. Hughes, R. Ramstad, Y. Dong, D. Brain, H. AlMazmi, <strong>K. Chirakkil</strong>, et al. (2022), <em>Patchy proton aurora at Mars: A global view of solar wind precipitation across the Martian dayside from EMM/EMUS</em>, <a href="https://doi.org/10.1029/2022GL099881">Geophysical Research Letters, 49</a></li>
-
-  
-      <li><strong>C. Krishnaprasad</strong>, S. V. Thampi, C. O. Lee, S. P. Tadepalli, K. Sankarasubramanian, T. K. Pant (2021), <em>Solar Energetic Particle Events of July 2017: Multi-spacecraft Observations near 1 and 1.5 AU</em>, <a href="https://doi.org/10.1002/essoar.10503517.2">Earth and Space Science Open Archive</a></li>
-
-  
-      <li><strong>C. Krishnaprasad</strong>, S. V. Thampi, A. Bhardwaj, T. K. Pant, R. S. Thampi (2021), <em>Ionospheric plasma energization at Mars during the September 2017 ICME event</em>, <a href="https://doi.org/10.1016/j.pss.2021.105291">Planetary and Space Science, 205, 105291</a></li>
-
-  
-      <li>S. V. Thampi, <strong>C. Krishnaprasad</strong>, G. G. Nampoothiri, T. K. Pant (2021), <em>The Impact of a Stealth CME on the Martian Topside Ionosphere</em>, <a href="https://doi.org/10.1093/mnras/stab494">Monthly Notices of the Royal Astronomical Society, 503, 1, 625-632</a></li>
-
-  
-      <li><strong>C. Krishnaprasad</strong>, S. V. Thampi, A. Bhardwaj, C. O. Lee, K. K. Kumar, T. K. Pant (2020), <em>Recurrent Solar Energetic Particle Flux Enhancements Observed near Earth and Mars</em>, <a href="https://doi.org/10.3847/1538-4357/abb137">The Astrophysical Journal, 902(1), 13</a></li>
-
-  
-      <li>V. Mukundan, S. V. Thampi, A. Bhardwaj, <strong>C. Krishnaprasad</strong> (2020), <em>Model calculation of ionization efficiency in the Martian dayside ionosphere using MAVEN observations</em>, <a href="https://doi.org/10.1093/mnras/staa2123">Monthly Notices of the Royal Astronomical Society, 497, 2, 2239-2249</a></li>
-
-  
-      <li>V. Mukundan, S. V. Thampi, A. Bhardwaj, <strong>C. Krishnaprasad</strong> (2020), <em>The dayside ionosphere of Mars: Comparing a one-dimensional photochemical model with MAVEN Deep Dip campaign observations</em>, <a href="https://doi.org/10.1016/j.icarus.2019.113502">Icarus, 337, 113502</a></li>
-
-  
-      <li><strong>C. Krishnaprasad</strong>, S. V. Thampi, A. Bhardwaj (2019), <em>On the response of Martian ionosphere to the passage of a corotating interaction region: MAVEN observations</em>, <a href="https://doi.org/10.1029/2019JA026750">Journal of Geophysical Research: Space Physics, 124, 8, 6998-7012</a></li>
-
-  
-      <li>S. V. Thampi, <strong>C. Krishnaprasad</strong>, P. R. Shreedevi, T. K. Pant, A. Bhardwaj (2019), <em>Acceleration of energetic ions in corotating interaction region near 1.5 AU: Evidence from MAVEN</em>, <a href="https://doi.org/10.3847/2041-8213/ab2b43">The Astrophysical Journal Letters, 880(1), L3</a></li>
-
-  
-      <li>S. V. Thampi, <strong>C. Krishnaprasad</strong>, A. Bhardwaj, Y. Lee, R. K. Choudhary, T. K. Pant (2018), <em>MAVEN observations of the response of Martian ionosphere to the interplanetary coronal mass ejections of March 2015</em>, <a href="https://doi.org/10.1029/2018JA025444">Journal of Geophysical Research: Space Physics, 123, 8, 6917-6929</a></li>
-  
-    </ul>
-</section>
-
-<!-- Participation in Events -->
-<section>
-  <h2>Participation</h2>
-  <ul>
-    <li>NASA grant proposal review panel, 2024</li>
-    <li>NASA Postdoctoral Program application review panel, 2024</li>
-    <li>NASA Heliophysics Summer School, 2020</li>
-    <li>NASA SPICE Training Class, 2019</li>
-    <li>Ocean Research Expedition ICARB, 2018</li>
-    <li>Winter School on Astroparticle Physics, 2014</li>
-    <!-- Other participations -->
-  </ul>
-</section>
-
-<!-- Journal Reviewer -->
-<section>
-  <h2>Journal Reviewer</h2>
-  <ul>
-    <li>The Astrophysical Journal (ApJ)</li>
-    <li>Monthly Notices of the Royal Astronomical Society (MNRAS)</li>
-    <li>Planetary and Space Science (PSS)</li>
-  </ul>
-</section>
-
-<!-- Memberships -->
-<section>
-  <h2>Memberships</h2>
-  <ul>
-    <li>Science Team Member, Emirates Mars Mission (EMM)</li>
-    <li>Science Team Member, NASA MAVEN mission</li>
-    <li>American Geophysical Union (AGU)</li>
-    <li>European Geosciences Union (EGU)</li>
-  </ul>
-</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dr. Krishnaprasad Chirakkil. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

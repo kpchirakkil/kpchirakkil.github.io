@@ -167,6 +167,12 @@ a:hover {
   position: relative;
 }
 
+/* Ensure timeline has no list-style */
+.section .timeline,
+.section .timeline li {
+  list-style: none !important; /* Force removal of bullets */
+}
+
 .timeline li {
   position: relative;
   margin-bottom: 30px;
@@ -229,7 +235,7 @@ a:hover {
   ------------------------------------------------------------
   PARTICIPATION, REVIEWER, MEMBERSHIPS, CONTACT
   ------------------------------------------------------------
-*/
+/* General rule for regular lists within sections */
 .section ul {
   list-style: disc inside;
   margin: 20px 0 0;

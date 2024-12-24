@@ -167,12 +167,6 @@ a:hover {
   position: relative;
 }
 
-/* Ensure timeline has no list-style */
-.section .timeline,
-.section .timeline li {
-  list-style: none !important; /* Force removal of bullets */
-}
-
 .timeline li {
   position: relative;
   margin-bottom: 30px;
@@ -235,16 +229,24 @@ a:hover {
   ------------------------------------------------------------
   PARTICIPATION, REVIEWER, MEMBERSHIPS, CONTACT
   ------------------------------------------------------------
-/* General rule for regular lists within sections */
+*/
+/* Default bullet style for other lists in sections */
 .section ul {
   list-style: disc inside;
   margin: 20px 0 0;
   padding: 0;
+  /* This applies to standard lists in e.g. Participation, Memberships */
 }
 
 .section ul li {
   margin-bottom: 10px;
   font-size: 1rem;
+}
+
+/* Override to remove bullets for timeline lists */
+.section .timeline,
+.section .timeline li {
+  list-style: none !important;
 }
 
 /* 

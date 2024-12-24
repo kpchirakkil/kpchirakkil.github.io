@@ -1,207 +1,307 @@
-/* General Styles */
+/* 
+  ------------------------------------------------------------
+  GENERAL STYLES
+  ------------------------------------------------------------
+*/
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #fafafa;
+  line-height: 1.6;
 }
 
 a {
-    color: #007acc;
-    text-decoration: none;
+  color: #007acc;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
 }
 
-/* Header Styles */
-header {
-    background-color: #f5f5f5;
-    padding: 20px 0;
+/* 
+  ------------------------------------------------------------
+  HEADER STYLES
+  ------------------------------------------------------------
+*/
+.site-header {
+  background-color: #fefefe;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-header .logo {
-    float: left;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
-header .logo h1 {
-    margin: 0;
-    font-size: 24px;
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #007acc;
 }
 
-header nav {
-    float: right;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
 }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.nav-links li a {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 20px;
+.nav-links li a:hover {
+  background-color: #007acc;
+  color: #fff;
 }
 
-header nav ul li a {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-header::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Hero Section */
+/* 
+  ------------------------------------------------------------
+  HERO SECTION
+  ------------------------------------------------------------
+*/
 .hero {
-    background-color: #e0f7fa;
-    padding: 60px 0;
+  background: linear-gradient(
+    120deg,
+    rgba(224, 247, 250, 0.6),
+    rgba(224, 247, 250, 1)
+  );
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  min-height: 50vh;
 }
 
 .hero-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
 }
 
 .hero-text {
-    flex: 1;
-    padding-right: 20px;
+  flex: 1;
+  min-width: 280px;
 }
 
 .hero-text h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007acc;
 }
 
 .hero-text p {
-    font-size: 18px;
-    line-height: 1.6;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
 .hero-image {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
 }
 
 .hero-image img {
-    max-width: 300px;
-    border-radius: 50%;
+  max-width: 280px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styles */
+/* 
+  ------------------------------------------------------------
+  SECTION STYLES
+  ------------------------------------------------------------
+*/
 .section {
-    padding: 60px 0;
+  padding: 60px 0;
+  background-color: #fff;
+  margin-bottom: 1rem;
 }
 
 .section h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
 }
 
+.section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* 
+  ------------------------------------------------------------
+  TIMELINE (Education, Experience)
+  ------------------------------------------------------------
+*/
 .timeline {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .timeline li {
-    margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.timeline-marker {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #007acc;
+  left: 0;
+  top: 5px;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  background-color: #fefefe;
+  padding: 10px 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .timeline h3 {
-    font-size: 24px;
-    margin-bottom: 5px;
+  font-size: 1.25rem;
+  margin: 0 0 0.25rem 0;
+  color: #007acc;
 }
 
 .timeline .institution {
-    font-size: 18px;
-    color: #555;
+  font-size: 1rem;
+  color: #555;
 }
 
 .timeline .date {
-    font-size: 16px;
-    color: #999;
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #999;
+  margin-bottom: 0.5rem;
 }
 
+/* 
+  ------------------------------------------------------------
+  PUBLICATIONS LIST
+  ------------------------------------------------------------
+*/
 .publications-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
 }
 
 .publications-list li {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-/* Contact Section */
-#contact p {
-    text-align: center;
-    font-size: 18px;
+/* 
+  ------------------------------------------------------------
+  PARTICIPATION, REVIEWER, MEMBERSHIPS, CONTACT
+  ------------------------------------------------------------
+*/
+.section ul {
+  list-style: disc inside;
+  margin: 20px 0 0;
+  padding: 0;
 }
 
-/* Social Media Icons */
+.section ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* 
+  ------------------------------------------------------------
+  SOCIAL MEDIA ICONS
+  ------------------------------------------------------------
+*/
 .social-media {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .social-media a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #333;
-    font-size: 28px;
-    transition: color 0.3s;
+  display: inline-block;
+  margin: 0 10px;
+  color: #333;
+  font-size: 1.75rem;
+  transition: color 0.3s;
 }
 
 .social-media a:hover {
-    color: #007acc;
+  color: #007acc;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #f5f5f5;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    color: #777;
+/* 
+  ------------------------------------------------------------
+  FOOTER
+  ------------------------------------------------------------
+*/
+.site-footer {
+  background-color: #fefefe;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.875rem;
+  color: #555;
+  border-top: 1px solid #eee;
 }
 
-/* Responsive Styles */
+/* 
+  ------------------------------------------------------------
+  RESPONSIVE STYLES
+  ------------------------------------------------------------
+*/
 @media (max-width: 768px) {
-    header .logo,
-    header nav {
-        float: none;
-        text-align: center;
-    }
+  .header-container {
+    flex-direction: column;
+  }
 
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .hero-content {
-        flex-direction: column;
-    }
+  .hero-text {
+    padding-right: 0;
+  }
 
-    .hero-text {
-        padding-right: 0;
-        text-align: center;
-    }
+  .hero-image {
+    margin-top: 20px;
+  }
 
-    .hero-image {
-        margin-top: 20px;
-    }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

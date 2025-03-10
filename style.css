@@ -208,6 +208,17 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+/* Remove bullets specifically in Education and Experience sections */
+#education .timeline,
+#experience .timeline {
+  list-style: none !important;
+}
+
+#education .timeline li,
+#experience .timeline li {
+  list-style: none !important;
+}
+
 /* 
   ------------------------------------------------------------
   PUBLICATIONS LIST
